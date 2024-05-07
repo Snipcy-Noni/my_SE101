@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+table { 
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    color: #fff;
+    background-color: rgb(125, 125, 125);
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+input[type="text"], 
+input[type="password"] {
+    width: 250px;
+    border-radius: 5px;
+    padding: 7px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border: 2px solid  rgba(0, 123, 255, 0.7);
+}
+
+button, a, input[type="submit"]{
+    text-decoration: none;
+    padding: 8px 24px;
+    color: #fff;
+    background-color:  rgb(0, 123, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all ease-in-out 0.15s;
+}
+
+button:hover, a:hover,
+input[type="submit"]:hover{
+    background-color: rgb(0, 92, 191);
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+
+.form_container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.256);
+    border-radius: 8px;
+    padding: 50px;
+}
+
+.form_container form input{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form_container h1 {
+    margin-bottom: 10px;
+}
+
+.form_container form button[type="submit"],
+.form_container form input[type="submit"]{
+    margin-top: 20px;
+    width: 100%;
+}
+
+label {
+    font-size: 12px;
+    color: #7a7a7a;
+}
+.custom_select {
+    width: 100%;
+}
+
+.custom_select select {
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.custom_select select:focus {
+    border: 2px solid  rgba(0, 123, 255, 0.7);
+}
+
+.img-container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-container img {
+    width: 200px;
+    height: 100%;
+    object-fit: cover;
+}
+
+
